@@ -87,9 +87,9 @@ $ss = Database::toArray(Database::search("nodes", Array("group" => "{$rs['group'
                         <?php if ($conf[1] != null) {foreach($conf[1] as $port=>$ssconf) {
                             echo "<p><b>".$port."远程端口配置:\n</b></p>";
                             echo "<pre class=\"prettyprint\">";
-                            echo "Server config:\n";
+                            echo "Server config 使用如下内容替换MtSword服务端的config.json内容\n\n";
                             echo $ssconf[0]."\n";
-                            echo "Client config:\n";
+                            echo "Client config 使用如下内容对SS客户端进行配置\n\n";
                             echo $ssconf[1]."\n";
                             echo "</pre>";
                             }} else {echo "<pre class=\"prettyprint\">当前无SS配置</pre>";}?>
