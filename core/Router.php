@@ -26,6 +26,6 @@ if(isset($_GET['page']) && preg_match("/^[A-Za-z0-9\-\_]{1,8}$/", $_GET['page'])
 		}
 	}
 } else {
-	$pages->loadPage("home");
+	$pages->loadPage("login");
 }
 exit;
