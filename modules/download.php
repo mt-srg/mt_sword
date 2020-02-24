@@ -69,7 +69,7 @@ if(!$rs) {
 									<td nowrap>Windows</td>
 									<td nowrap>amd64</td>
 									<td nowrap>MtSword_win64_服务端_简.zip</td>
-									<td nowrap><a href="Software/Server/MtSword_win64_服务端_简.zip" target="_blank"><button class="btn btn-sm btn-success">点击下载</button></a></td>
+									<td nowrap><a href="Software/MtSword_win64_服务端_简.zip" target="_blank"><button class="btn btn-sm btn-success">点击下载</button></a></td>
 								</tr>
 <!--								<tr>-->
 <!--									<td><img src="assets/download/linux.png" class="system-img"></td>-->
