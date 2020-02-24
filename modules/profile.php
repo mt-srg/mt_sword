@@ -145,15 +145,15 @@ $token       = Database::querySingleLine("tokens", Array("username" => $_SESSION
 							</tr>
 							<tr>
 								<td style="width: 30%;"><b>总计签到</b></td>
-								<td><?php echo htmlspecialchars($signinfo['totalsign']); ?> 天</td>
+								<td><?php if($signinfo != null){echo htmlspecialchars($signinfo['totalsign']);}else{echo "0";}?> 天</td>
 							</tr>
 							<tr>
 								<td style="width: 30%;"><b>获得流量</b></td>
-								<td><?php echo htmlspecialchars($signinfo['totaltraffic']); ?> GB</td>
+                                <td><?php if($signinfo != null){echo htmlspecialchars($signinfo['totaltraffic']);}else{echo "0";}?> GB</td>
 							</tr>
 							<tr>
 								<td style="width: 30%;"><b>上次签到</b></td>
-								<td><?php echo date("Y-m-d H:i:s", $signinfo['signdate']); ?></td>
+                                <td><?php if($signinfo != null){echo date("Y-m-d H:i:s", $signinfo['signdate']);}else{echo "从未签到";}?></td>
 							</tr>
 						</table>
 					</div>

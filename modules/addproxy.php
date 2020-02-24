@@ -152,15 +152,15 @@ if(isset($_GET['randomport'])) {
 							<div class="col-sm-6">
 								<p><b>加密传输</b> <small class="pdesc">使用加密来保护传输的数据</small></p>
 								<p><select class="form-control" id="use_encryption">
-									<option value="true">启用</option>
-									<option value="false">关闭</option>
+                                        <option value="false">关闭</option>
+                                        <option value="true">启用</option>
 								</select></p>
 							</div>
 							<div class="col-sm-6">
 								<p><b>压缩数据</b> <small class="pdesc">压缩数据来节省宽带和流量使用</small></p>
 								<p><select class="form-control" id="use_compression">
-									<option value="true">启用</option>
-									<option value="false">关闭</option>
+                                        <option value="true">启用</option>
+                                        <option value="false">关闭</option>
 								</select></p>
 							</div>
 							<div class="col-sm-6">

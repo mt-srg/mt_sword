@@ -297,7 +297,6 @@ class ProxyManager {
 		
 		// 客户端基础配置
 		$configuration = <<<EOF
-frpc.ini:
 [common]
 server_addr = {$ns['ip']}
 server_port = {$ns['port']}

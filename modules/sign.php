@@ -159,15 +159,15 @@ if($ss) {
 						<div class="row">
 							<div class="col-sm-4 text-center">
 								<h1 class='info-icon'><i class='fas fa-calendar-check'></i></h1>
-								<p>总计已签到 <?php echo $ss['totalsign'] == "" ? "0" : $ss['totalsign'];?> 天</p>
+								<p>总计已签到 <?php echo $ss == null ? "0" : $ss['totalsign'];?> 天</p>
 							</div>
 							<div class="col-sm-4 text-center">
 								<h1 class='info-icon'><i class='fas fa-rocket'></i></h1>
-								<p>共获得流量 <?php echo $ss['totaltraffic'] == "" ? "0" : $ss['totaltraffic'];?> GB</p>
+								<p>共获得流量 <?php echo $ss == null ? "0" : $ss['totaltraffic'];?> GB</p>
 							</div>
 							<div class="col-sm-4 text-center">
 								<h1 class='info-icon'><i class='fas fa-clock'></i></h1>
-								<p>上次签到于 <?php echo $ss['signdate'] == "" ? "从未签到" : date("Y-m-d", $ss['signdate']);?></p>
+								<p><?php echo $ss == null ? "从未签到" : "上次签到于 ".date("Y-m-d", $ss['signdate']);?></p>
 							</div>
 						</div>
                     </div>

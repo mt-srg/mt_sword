@@ -26,7 +26,7 @@ CREATE TABLE `groups`  (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 5 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
 
-INSERT INTO `groups` VALUES (1, 'default', '默认组', 1024, 5, 1024, 1024);
+INSERT INTO `groups` VALUES (1, 'default', '默认组', 512, 1, 128, 128);
 INSERT INTO `groups` VALUES (2, 'vip1', '青铜VIP', 10240, 10, 2048, 2048);
 INSERT INTO `groups` VALUES (3, 'vip2', '黄金VIP', 20480, 15, 3072, 3072);
 INSERT INTO `groups` VALUES (4, 'vip3', '钻石VIP', 40960, 20, 4096, 4096);
@@ -97,8 +97,8 @@ CREATE TABLE `settings`  (
   `value` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL
 ) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
 
-INSERT INTO `settings` VALUES ('broadcast', '欢迎使用 Sakura Panel 内网穿透管理面板 by Akkariin');
-INSERT INTO `settings` VALUES ('helpinfo', '这里随便写一点什么帮助内容吧');
+INSERT INTO `settings` VALUES ('broadcast', '欢迎使用 MT Sword 管理面板');
+INSERT INTO `settings` VALUES ('helpinfo', '帮助内容');
 
 -- ------------------
 -- 每日签到

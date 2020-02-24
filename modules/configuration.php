@@ -82,9 +82,9 @@ $ss = Database::toArray(Database::search("nodes", Array("group" => "{$rs['group'
                         <pre class="prettyprint"><?php if (count($ss) !== 0){
                             $conf = $pm->getUserProxiesConfig($_SESSION['user'], $sel_server);
                             echo $conf[0];} else {$conf = []; echo "当前所有服务器都不可用，请联系管理员。";} ?></pre>
-<!--                        <p>--><?php //if ($conf[1] != null){print_r($conf[1]);} ?><!--</p>-->
+<!--                        <p>--><?php //{print_r($conf[1]);} ?><!--</p>-->
                         <p><b>ss配置文件</b></p>
-                        <?php foreach($conf[1] as $port=>$ssconf) {
+                        <?php if ($conf[1] != null) {foreach($conf[1] as $port=>$ssconf) {
                             echo "<p><b>".$port."远程端口配置:\n</b></p>";
                             echo "<pre class=\"prettyprint\">";
                             echo "Server config:\n";
@@ -92,7 +92,7 @@ $ss = Database::toArray(Database::search("nodes", Array("group" => "{$rs['group'
                             echo "Client config:\n";
                             echo $ssconf[1]."\n";
                             echo "</pre>";
-                            }?>
+                            }} else {echo "<pre class=\"prettyprint\">当前无SS配置</pre>";}?>
                     </div>
 				</div>
 			</div>
